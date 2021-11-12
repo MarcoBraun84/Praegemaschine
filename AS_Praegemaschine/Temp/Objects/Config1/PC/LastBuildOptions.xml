@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9" WorkingVersion="4.9"?>
+<RuleSetOptions UsesUTCTime="True">
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\ashwac.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2021-11-02 16:24:06" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\ashwac.br&quot; -L &quot;AsArLog: V*, AsBrStr: V*, AsIecCon: V*, AsTCP: V*, astime: V*, ComTCP_L: V*, operator: V*, runtime: V*, standard: V*&quot; -c &quot;Config1&quot; -Z &quot;Connectivity: n.d, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; -M IA32 -B C4.90 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config1&quot; -T SG4 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\sysconf.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2021-11-02 16:24:06" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot;  -c &quot;Config1&quot; -sysconf -S &quot;PC&quot; -Z &quot;Connectivity: n.d, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\sysconf.br&quot; -T SG4 -B C4.90 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config1&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\asfw.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2021-11-02 16:24:06" />
+    <Prerequisite ID="c:\brautomation\as49\upgrades\modified.txt" LastWriteTime="2020-11-19 13:46:36" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot;  -v V1.00.0 -S &quot;PC&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\asfw.br&quot; -T SG4 -B C4.90 -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config1&quot; -zip -s &quot;Config1&quot; -firmware -Z &quot;Connectivity: n.d, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\ashwd.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2021-11-02 16:24:06" />
+    <Prerequisite ID="c:\brautomation\as49\upgrades\modified.txt" LastWriteTime="2020-11-19 13:46:36" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot;  -v V1.00.0 -S &quot;PC&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\ashwd.br&quot; -T SG4 -B C4.90 -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config1&quot; -zip -s &quot;Config1&quot; -hwd -Z &quot;Connectivity: n.d, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\arconfig.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2021-11-02 16:24:06" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\pc\iomap.iom" LastWriteTime="2021-11-02 16:24:06" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot; &quot;$(AS_PROJECT_PATH)\Physical\Config1\PC\IoMap.iom&quot;  -arconfig -C &quot;/COMT=2500 /RT=1000 /AM=* /SDT=5 /DAIP=10.10.4.1 /REPO=11159 /ANSL=1 /PT=11169&quot; -D &quot;/IF=tcpip /LOPO=11159 /SA=1&quot; -c &quot;Config1&quot; -v V1.00.0 -S &quot;PC&quot; -Z &quot;Connectivity: n.d, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\arconfig.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\ChannelConfiguration.xml&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\HardwareConfiguration.xml&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\ReActionTechnologyConfiguration.xml&quot; -T SG4 -B C4.90 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config1&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\udbdef.br">
+    <Prerequisite ID="c:\brautomation\as49\as\technologypackages\unitsystem\n.d\transfer\modules\sg4\udbdef.br" LastWriteTime="2020-08-10 04:29:50" />
+    <CommandLine Parameter="C:\BrAutomation\AS49\AS\TechnologyPackages\UnitSystem\n.d\Transfer\Modules\SG4\udbdef.br, $(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\udbdef.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\iomap.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\pc\iomap.iom" LastWriteTime="2021-11-02 16:24:06" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\pc\pvmap.vvm" LastWriteTime="2021-11-02 16:24:06" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2021-11-02 16:24:06" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\pc\cpu.sw" LastWriteTime="2021-11-11 13:52:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\channelconfiguration.xml" LastWriteTime="2021-11-11 13:24:36" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\PC\IoMap.iom&quot; &quot;$(AS_PROJECT_PATH)\Physical\Config1\PC\PvMap.vvm&quot;  -m &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\ConfigInfo.cfi&quot; -g &quot;$(AS_PROJECT_PATH)\Temp\Objects\Declarations.lst&quot; -x &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\ChannelConfiguration.xml&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC&quot; -iomap -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\iomap.br&quot; -T SG4 -B C4.90 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config1.PC&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\tcdata\tcdata.imx">
+    <Prerequisite ID="c:\brautomation\as49\as\technologypackages\textsystem\n.d\objectcatalog\elements\textconfig\template\tc.textconfig" LastWriteTime="2020-08-10 04:29:50" />
+    <CommandLine Parameter=" -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\TCData\TCData.imx&quot; -c &quot;C:\BrAutomation\AS49\AS\TechnologyPackages\TextSystem\n.d\ObjectCatalog\Elements\TextConfig\Template\TC.textconfig&quot; -I &quot;C:\BrAutomation\AS\System\C0490&quot; &quot;C:\BrAutomation\AS49\AS\TechnologyPackages\UnitSystem\n.d&quot; -P &quot;$(AS_PROJECT_PATH)&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\tcdata\tcdata.s18d">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\tcdata\tcdata.imx" LastWriteTime="2021-11-11 13:24:34" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\TCData\TCData.imx&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\TCData\TCData.s18d&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\tcdata.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\tcdata\tcdata.s18d" LastWriteTime="2021-11-12 09:24:22" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\TCData\TCData.s18d&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\TCData.br&quot; -t TextModule" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\role.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\pc\accessandsecurity\userrolesystem\role.role" LastWriteTime="2021-11-02 16:24:06" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\PC\AccessAndSecurity\UserRoleSystem\Role.role&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\Role.br&quot; -zip -B C4.90 -z n.d -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config1&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\user.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\pc\accessandsecurity\userrolesystem\user.user" LastWriteTime="2021-11-02 16:24:06" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\pc\accessandsecurity\userrolesystem\role.role" LastWriteTime="2021-11-02 16:24:06" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\PC\AccessAndSecurity\UserRoleSystem\User.user&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\User.br&quot; -zip -B C4.90 -z n.d -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config1&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\fwrules.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\pc\accessandsecurity\firewall\rules.firewallrules" LastWriteTime="2021-11-02 16:24:06" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\PC\AccessAndSecurity\Firewall\Rules.firewallRules&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\FWRules.br&quot; -zip -B C4.90 -z n.d -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config1&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\comtcp_p.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\comtcp_p\comtcp_p.ox" LastWriteTime="2021-11-12 09:24:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\pc\cpu.per" LastWriteTime="2021-11-02 16:24:06" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asieccon\asieccon.fun" LastWriteTime="2021-11-02 16:24:06" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\standard\standard.fun" LastWriteTime="2021-11-02 16:26:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\astcp\astcp.fun" LastWriteTime="2021-11-02 16:26:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asbrstr\asbrstr.fun" LastWriteTime="2021-11-02 16:26:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\comtcp\mng_package.var" LastWriteTime="2021-11-11 13:51:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\comtcp\mng_package.typ" LastWriteTime="2021-11-11 14:01:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\comtcp\comtcp_p\variables.var" LastWriteTime="2021-11-11 14:50:36" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\ComTCP_P\ComTCP_P.ox&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\ComTCP_P.br&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\NT.ofs&quot; -offsetLT &quot;$(AS_PROJECT_PATH)\Binaries\Config1\PC\LT.ofs&quot; -T SG4 -M IA32 -B C4.90 -G V4.1.2  -extConstants -r Cyclic1 -p 2 -s &quot;Libraries.ComTCP.ComTCP_P&quot; -L &quot;AsArLog: V*, AsBrStr: V*, AsIecCon: V*, AsTCP: V*, astime: V*, ComTCP_L: V*, operator: V*, runtime: V*, standard: V*&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="VolatileMemory" Value="65535" />
+    <AdditionalBuildTrigger Key="PermanentAnalogMemory" Value="0" />
+    <AdditionalBuildTrigger Key="PermanentDigitalMemory" Value="0" />
+    <AdditionalBuildTrigger Key="RemanentMemory" Value="4096" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\comtcp_p\comtcp_p.ox">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\comtcp_p\a.out" LastWriteTime="2021-11-12 09:24:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asieccon\asieccon.fun" LastWriteTime="2021-11-02 16:24:06" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\standard\standard.fun" LastWriteTime="2021-11-02 16:26:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\astcp\astcp.fun" LastWriteTime="2021-11-02 16:26:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asbrstr\asbrstr.fun" LastWriteTime="2021-11-02 16:26:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\comtcp\mng_package.var" LastWriteTime="2021-11-11 13:51:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\comtcp\mng_package.typ" LastWriteTime="2021-11-11 14:01:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\comtcp\comtcp_p\variables.var" LastWriteTime="2021-11-11 14:50:36" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\ComTCP_P\a.out&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\ComTCP_P\ComTCP_P.ox&quot; -T SG4 -r Cyclic1 -G V4.1.2  -B C4.90 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\comtcp_p\a.out">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\comtcp_p\main.cpp.o" LastWriteTime="2021-11-12 09:24:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\comtcp_p\_bur_pvdef.c.o" LastWriteTime="2021-11-12 09:24:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\archives\config1\pc\libcomtcp_l_s.a" LastWriteTime="2021-11-12 09:24:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asieccon\asieccon.fun" LastWriteTime="2021-11-02 16:24:06" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\standard\standard.fun" LastWriteTime="2021-11-02 16:26:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\astcp\astcp.fun" LastWriteTime="2021-11-02 16:26:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asbrstr\asbrstr.fun" LastWriteTime="2021-11-02 16:26:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\comtcp\mng_package.var" LastWriteTime="2021-11-11 13:51:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\comtcp\mng_package.typ" LastWriteTime="2021-11-11 14:01:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\comtcp\comtcp_p\variables.var" LastWriteTime="2021-11-11 14:50:36" />
+    <CommandLine Parameter=" -link &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\ComTCP_P\Main.cpp.o&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\ComTCP_P\_bur_pvdef.c.o&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\ComTCP_P\a.out&quot; -G V4.1.2  -T SG4 -M IA32 &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\Config1\PC\libComTCP_L_s.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\C0490\SG4\Ia32\libAsIecCon.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\C0490\SG4\Ia32\libAsArLog.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\C0490\SG4\Ia32\libAsTCP.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\C0490\SG4\Ia32\libastime.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\C0490\SG4\Ia32\libAsBrStr.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\C0490\SG4\Ia32\libstandard.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\C0490\SG4\Ia32\libruntime.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\C0490\SG4\Ia32\liboperator.a&quot; -specs &quot;C:\BrAutomation\AS49\AS\gnuinst\V4.1.2\4.9\i386-elf\specs\I386specs_brelf&quot; &quot;-Wl,C:\BrAutomation\AS49\AS\gnuinst\V4.1.2\4.9\i386-elf\lib\libstdc++.a,C:\BrAutomation\AS49\AS\gnuinst\V4.1.2\4.9\i386-elf\lib\libsupc++.a,C:\BrAutomation\AS49\AS\gnuinst\V4.1.2\4.9\i386-elf\lib\libbur_cpp.a,C:\BrAutomation\AS49\AS\gnuinst\V4.1.2\4.9\i386-elf\lib\libbur_cpp_rtk.a&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\comtcp_p\main.cpp.o">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\comtcp\comtcp_p\main.cpp" LastWriteTime="2021-11-11 14:50:36" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asieccon\asieccon.fun" LastWriteTime="2021-11-02 16:24:06" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\standard\standard.fun" LastWriteTime="2021-11-02 16:26:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\astcp\astcp.fun" LastWriteTime="2021-11-02 16:26:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asbrstr\asbrstr.fun" LastWriteTime="2021-11-02 16:26:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\comtcp\mng_package.var" LastWriteTime="2021-11-11 13:51:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\comtcp\mng_package.typ" LastWriteTime="2021-11-11 14:01:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\comtcp\comtcp_p\variables.var" LastWriteTime="2021-11-11 14:50:36" />
+    <Prerequisite ID="c:\brautomation\as49\as\gnuinst\v4.1.2\4.9\i386-elf\include\bur\plctypes.h" LastWriteTime="2020-08-10 04:29:50" />
+    <Prerequisite ID="c:\brautomation\as49\as\gnuinst\v4.1.2\4.9\i386-elf\include\bur\plc.h" LastWriteTime="2020-08-10 04:29:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\comtcp\comtcp_l\mng_global.hpp" LastWriteTime="2021-11-11 14:50:36" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\comtcp\comtcp_l\mng_internaltyp.hpp" LastWriteTime="2021-11-11 14:50:36" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\comtcp\comtcp_l\mng_comhdlr.hpp" LastWriteTime="2021-11-11 14:50:36" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\Libraries\ComTCP\ComTCP_P\Main.cpp&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\ComTCP_P\Main.cpp.o&quot; -T SG4 -M IA32 -B C4.90 -G V4.1.2  -s &quot;Libraries.ComTCP.ComTCP_P&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -specs &quot;C:\BrAutomation\AS49\AS\gnuinst\V4.1.2\4.9\i386-elf\specs\I386specs_brelf&quot; -I &quot;$(AS_PROJECT_PATH)\Logical\Libraries\ComTCP\ComTCP_P&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\Libraries\ComTCP\ComTCP_P&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\Libraries\ComTCP&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\Libraries&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes&quot; -trigraphs -fno-asm -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O0 -g -Wall -include &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\Libraries.h&quot; -x c++ -P &quot;$(AS_PROJECT_PATH)&quot;" />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\comtcp_p\_bur_pvdef.c.o">
+    <Prerequisite ID="c:\brautomation\as49\as\gnuinst\v4.1.2\4.9\i386-elf\include\bur\_bur_pvdef.c" LastWriteTime="2020-08-10 04:29:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\comtcp_p\main.cpp.o" LastWriteTime="2021-11-12 09:24:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asieccon\asieccon.fun" LastWriteTime="2021-11-02 16:24:06" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\standard\standard.fun" LastWriteTime="2021-11-02 16:26:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\astcp\astcp.fun" LastWriteTime="2021-11-02 16:26:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asbrstr\asbrstr.fun" LastWriteTime="2021-11-02 16:26:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\comtcp\mng_package.var" LastWriteTime="2021-11-11 13:51:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\comtcp\mng_package.typ" LastWriteTime="2021-11-11 14:01:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\comtcp\comtcp_p\variables.var" LastWriteTime="2021-11-11 14:50:36" />
+    <Prerequisite ID="c:\brautomation\as49\as\gnuinst\v4.1.2\4.9\i386-elf\include\bur\plctypes.h" LastWriteTime="2020-08-10 04:29:50" />
+    <Prerequisite ID="c:\brautomation\as49\as\gnuinst\v4.1.2\4.9\i386-elf\include\bur\plc.h" LastWriteTime="2020-08-10 04:29:50" />
+    <CommandLine Parameter="&quot;C:\BrAutomation\AS49\AS\gnuinst\V4.1.2\4.9\i386-elf\include\bur\_bur_pvdef.c&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\ComTCP_P\_bur_pvdef.c.o&quot; -T SG4 -M IA32 -B C4.90 -G V4.1.2  -s &quot;Libraries.ComTCP.ComTCP_P&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -specs &quot;C:\BrAutomation\AS49\AS\gnuinst\V4.1.2\4.9\i386-elf\specs\I386specs_brelf&quot; -I &quot;$(AS_PROJECT_PATH)\Logical\Libraries\ComTCP\ComTCP_P&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\Libraries\ComTCP\ComTCP_P&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\Libraries\ComTCP&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\Libraries&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes&quot; -trigraphs -fno-asm -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O0 -g -Wall -include &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\Libraries.h&quot; -x c -P &quot;$(AS_PROJECT_PATH)&quot;" />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\astcp.br">
+    <Prerequisite ID="c:\brautomation\as\system\c0490\sg4\ia32\astcp.br" LastWriteTime="2020-11-19 10:00:14" />
+    <CommandLine Parameter="C:\BrAutomation\AS\System\C0490\SG4\Ia32\AsTCP.br, $(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\AsTCP.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\runtime.br">
+    <Prerequisite ID="c:\brautomation\as\system\c0490\sg4\ia32\runtime.br" LastWriteTime="2020-11-19 10:01:18" />
+    <CommandLine Parameter="C:\BrAutomation\AS\System\C0490\SG4\Ia32\runtime.br, $(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\runtime.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\standard.br">
+    <Prerequisite ID="c:\brautomation\as\system\c0490\sg4\ia32\standard.br" LastWriteTime="2020-11-19 10:01:18" />
+    <CommandLine Parameter="C:\BrAutomation\AS\System\C0490\SG4\Ia32\standard.br, $(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\standard.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\asarlog.br">
+    <Prerequisite ID="c:\brautomation\as\system\c0490\sg4\ia32\asarlog.br" LastWriteTime="2020-11-19 10:00:14" />
+    <CommandLine Parameter="C:\BrAutomation\AS\System\C0490\SG4\Ia32\AsArLog.br, $(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\AsArLog.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\asbrstr.br">
+    <Prerequisite ID="c:\brautomation\as\system\c0490\sg4\ia32\asbrstr.br" LastWriteTime="2020-11-19 10:00:14" />
+    <CommandLine Parameter="C:\BrAutomation\AS\System\C0490\SG4\Ia32\AsBrStr.br, $(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\AsBrStr.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\operator.br">
+    <Prerequisite ID="c:\brautomation\as\system\c0490\sg4\ia32\operator.br" LastWriteTime="2020-11-19 10:01:18" />
+    <CommandLine Parameter="C:\BrAutomation\AS\System\C0490\SG4\Ia32\operator.br, $(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\operator.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\astime.br">
+    <Prerequisite ID="c:\brautomation\as\system\c0490\sg4\ia32\astime.br" LastWriteTime="2020-11-19 10:01:18" />
+    <CommandLine Parameter="C:\BrAutomation\AS\System\C0490\SG4\Ia32\astime.br, $(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\astime.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\asieccon.br">
+    <Prerequisite ID="c:\brautomation\as\system\c0490\sg4\ia32\asieccon.br" LastWriteTime="2020-11-19 10:00:14" />
+    <CommandLine Parameter="C:\BrAutomation\AS\System\C0490\SG4\Ia32\AsIecCon.br, $(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\AsIecCon.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\archives\config1\pc\libcomtcp_l_s.a">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\comtcp_l\mng_comhdlr.cpp.o" LastWriteTime="2021-11-12 09:24:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\comtcp_l\mng_cpyouttomsg.cpp.o" LastWriteTime="2021-11-12 09:24:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\comtcp_l\mng_cpymsgtoinp.cpp.o" LastWriteTime="2021-11-12 09:24:12" />
+    <CommandLine Parameter=" -staticlink &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\ComTCP_L\MNG_ComHdlr.cpp.o&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\ComTCP_L\MNG_CpyOutToMsg.cpp.o&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\ComTCP_L\MNG_CpyMsgToInp.cpp.o&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Archives\Config1\PC\libComTCP_L_s.a&quot; -G V4.1.2  -T SG4 -M IA32" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\comtcp_l\mng_comhdlr.cpp.o">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\comtcp\comtcp_l\mng_comhdlr.cpp" LastWriteTime="2021-11-11 14:50:36" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\comtcp\comtcp_l\mng_comhdlr.hpp" LastWriteTime="2021-11-11 14:50:36" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\comtcp\comtcp_l\mng_internaltyp.hpp" LastWriteTime="2021-11-11 14:50:36" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\includes\asieccon.h" LastWriteTime="2020-11-19 09:59:56" />
+    <Prerequisite ID="c:\brautomation\as49\as\gnuinst\v4.1.2\4.9\i386-elf\include\bur\plctypes.h" LastWriteTime="2020-08-10 04:29:50" />
+    <Prerequisite ID="c:\brautomation\as49\as\gnuinst\v4.1.2\4.9\i386-elf\include\bur\plc.h" LastWriteTime="2020-08-10 04:29:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\includes\asbrstr.h" LastWriteTime="2020-11-19 09:59:56" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\comtcp\comtcp_l\mng_global.hpp" LastWriteTime="2021-11-11 14:50:36" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\includes\mng_globaltyp.h" LastWriteTime="2021-11-11 13:52:22" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\includes\astcp.h" LastWriteTime="2020-11-19 09:59:56" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\includes\runtime.h" LastWriteTime="2020-11-19 09:59:58" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\includes\standard.h" LastWriteTime="2020-11-19 09:59:58" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\includes\astime.h" LastWriteTime="2020-11-19 09:59:56" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\comtcp\comtcp_l\mng_cpymsgtoinp.cpp" LastWriteTime="2021-11-11 14:50:36" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\comtcp\comtcp_l\mng_cpyouttomsg.cpp" LastWriteTime="2021-11-11 14:50:36" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\Libraries\ComTCP\ComTCP_L\MNG_ComHdlr.cpp&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\ComTCP_L\MNG_ComHdlr.cpp.o&quot; -T SG4 -M IA32 -B C4.90 -G V4.1.2  -s &quot;Libraries.ComTCP.ComTCP_L&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -specs &quot;C:\BrAutomation\AS49\AS\gnuinst\V4.1.2\4.9\i386-elf\specs\I386specs_brelf&quot; -r Library -I &quot;$(AS_PROJECT_PATH)\Logical\Libraries\ComTCP\ComTCP_L&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\Libraries\ComTCP\ComTCP_L&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes&quot; -trigraphs -fno-asm -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O0 -g -Wall -include &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\Libraries.h&quot; -D _COMTCP_L_EXPORT -x c++ -P &quot;$(AS_PROJECT_PATH)&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\comtcp_l\mng_cpyouttomsg.cpp.o">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\comtcp\comtcp_l\mng_cpyouttomsg.cpp" LastWriteTime="2021-11-11 14:50:36" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\comtcp\comtcp_l\mng_internaltyp.hpp" LastWriteTime="2021-11-11 14:50:36" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\includes\asieccon.h" LastWriteTime="2020-11-19 09:59:56" />
+    <Prerequisite ID="c:\brautomation\as49\as\gnuinst\v4.1.2\4.9\i386-elf\include\bur\plctypes.h" LastWriteTime="2020-08-10 04:29:50" />
+    <Prerequisite ID="c:\brautomation\as49\as\gnuinst\v4.1.2\4.9\i386-elf\include\bur\plc.h" LastWriteTime="2020-08-10 04:29:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\includes\asbrstr.h" LastWriteTime="2020-11-19 09:59:56" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\comtcp\comtcp_l\mng_global.hpp" LastWriteTime="2021-11-11 14:50:36" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\includes\mng_globaltyp.h" LastWriteTime="2021-11-11 13:52:22" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\Libraries\ComTCP\ComTCP_L\MNG_CpyOutToMsg.cpp&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\ComTCP_L\MNG_CpyOutToMsg.cpp.o&quot; -T SG4 -M IA32 -B C4.90 -G V4.1.2  -s &quot;Libraries.ComTCP.ComTCP_L&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -specs &quot;C:\BrAutomation\AS49\AS\gnuinst\V4.1.2\4.9\i386-elf\specs\I386specs_brelf&quot; -r Library -I &quot;$(AS_PROJECT_PATH)\Logical\Libraries\ComTCP\ComTCP_L&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\Libraries\ComTCP\ComTCP_L&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes&quot; -trigraphs -fno-asm -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O0 -g -Wall -include &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\Libraries.h&quot; -D _COMTCP_L_EXPORT -x c++ -P &quot;$(AS_PROJECT_PATH)&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\comtcp_l\mng_cpymsgtoinp.cpp.o">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\comtcp\comtcp_l\mng_cpymsgtoinp.cpp" LastWriteTime="2021-11-11 14:50:36" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\comtcp\comtcp_l\mng_internaltyp.hpp" LastWriteTime="2021-11-11 14:50:36" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\includes\asieccon.h" LastWriteTime="2020-11-19 09:59:56" />
+    <Prerequisite ID="c:\brautomation\as49\as\gnuinst\v4.1.2\4.9\i386-elf\include\bur\plctypes.h" LastWriteTime="2020-08-10 04:29:50" />
+    <Prerequisite ID="c:\brautomation\as49\as\gnuinst\v4.1.2\4.9\i386-elf\include\bur\plc.h" LastWriteTime="2020-08-10 04:29:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\includes\asbrstr.h" LastWriteTime="2020-11-19 09:59:56" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\comtcp\comtcp_l\mng_global.hpp" LastWriteTime="2021-11-11 14:50:36" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\includes\mng_globaltyp.h" LastWriteTime="2021-11-11 13:52:22" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\Libraries\ComTCP\ComTCP_L\MNG_CpyMsgToInp.cpp&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\ComTCP_L\MNG_CpyMsgToInp.cpp.o&quot; -T SG4 -M IA32 -B C4.90 -G V4.1.2  -s &quot;Libraries.ComTCP.ComTCP_L&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -specs &quot;C:\BrAutomation\AS49\AS\gnuinst\V4.1.2\4.9\i386-elf\specs\I386specs_brelf&quot; -r Library -I &quot;$(AS_PROJECT_PATH)\Logical\Libraries\ComTCP\ComTCP_L&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\Libraries\ComTCP\ComTCP_L&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes&quot; -trigraphs -fno-asm -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O0 -g -Wall -include &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\Libraries.h&quot; -D _COMTCP_L_EXPORT -x c++ -P &quot;$(AS_PROJECT_PATH)&quot;" />
+  </Rule>
+  <Rule ID="#cpu_tp.mak">
+    <CommandLine Parameter=" -r -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\#cpu_tp.mak&quot; -k" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\binaries\config1\pc\transfer.lst">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\ashwac.br" LastWriteTime="2021-11-11 13:24:36" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\sysconf.br" LastWriteTime="2021-11-11 13:24:36" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\asfw.br" LastWriteTime="2021-11-11 13:24:36" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\ashwd.br" LastWriteTime="2021-11-11 13:24:36" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\arconfig.br" LastWriteTime="2021-11-11 13:24:36" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\udbdef.br" LastWriteTime="2020-08-10 04:29:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\iomap.br" LastWriteTime="2021-11-11 13:24:36" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\tcdata.br" LastWriteTime="2021-11-12 09:24:22" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\role.br" LastWriteTime="2021-11-11 13:24:36" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\user.br" LastWriteTime="2021-11-11 13:24:36" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\fwrules.br" LastWriteTime="2021-11-11 13:24:36" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\comtcp_p.br" LastWriteTime="2021-11-12 09:24:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\astcp.br" LastWriteTime="2020-11-19 10:00:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\runtime.br" LastWriteTime="2020-11-19 10:01:18" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\standard.br" LastWriteTime="2020-11-19 10:01:18" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\asarlog.br" LastWriteTime="2020-11-19 10:00:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\asbrstr.br" LastWriteTime="2020-11-19 10:00:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\operator.br" LastWriteTime="2020-11-19 10:01:18" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\astime.br" LastWriteTime="2020-11-19 10:01:18" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\asieccon.br" LastWriteTime="2020-11-19 10:00:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\pc\cpu.sw" LastWriteTime="2021-11-11 13:52:16" />
+    <CommandLine Parameter=" &quot;$(AS_PROJECT_PATH)\Praegemaschine.apj&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -o &quot;$(AS_PROJECT_PATH)\Binaries&quot; -c &quot;Config1&quot; -i &quot;C:\BrAutomation\AS49&quot; -S &quot;PC&quot; -A &quot;AR000&quot; -pil -swFiles &quot;$(AS_PROJECT_PATH)\Physical\Config1\PC\Cpu.sw&quot; -Z &quot;Connectivity: n.d, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; -C &quot;/COMT=2500 /RT=1000 /AM=* /SDT=5 /DAIP=10.10.4.1 /REPO=11159 /ANSL=1 /PT=11169&quot; -D &quot;/IF=tcpip /LOPO=11159 /SA=1&quot; -M IA32 -T SG4" />
+  </Rule>
+</RuleSetOptions>

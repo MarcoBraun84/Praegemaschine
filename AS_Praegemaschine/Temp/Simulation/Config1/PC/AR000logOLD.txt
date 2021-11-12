@@ -1,0 +1,21 @@
+Fri Nov 12 10:23:34 2021
+COPYRIGHT (C) B&R Industrial Automation GmbH
+
+Fri Nov 12 10:23:34 2021
+No ARsim registration found!
+
+Fri Nov 12 10:23:34 2021
+InstanceName: 01d7d7a6f793f1d0
+
+Fri Nov 12 10:23:34 2021
+WorkingDirectory: E:\Praegemaschine\AS_Praegemaschine\Temp\Simulation\Config1\PC\
+
+Fri Nov 12 10:23:34 2021
+COMMAND_COLDSTART
+
+Fri Nov 12 10:23:37 2021
+Version: C4.90
+
+Fri Nov 12 10:24:46 2021
+COMMAND_TERMINATE
+

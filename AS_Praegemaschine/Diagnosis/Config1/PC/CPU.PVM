@@ -1,0 +1,25 @@
+WATCH Ver=2.00 PLCName=PLC1 CPUName=CPU TaskName= 
+Position X=0 Y=0 Width=0 Height=0 TabWidth Name=200 Type=100 Scope=60 Force=60 Index=16 ASCIIString=0
+                                    name                                     type force                                                            value level type len format place expand specs
+                        ComTCP_SimInputs                      ComTCP_INPUTS_32BIT    0 "                                                               *"    0   24    1    0    0    1         
+                              NumSignals                                      INT    0 "                                                              10"    1    3    1   10    0    0         
+                      Kolben_Magazin_LBK                                     BOOL    0 "                                                            TRUE"    1    1    1    2    0    0         
+                      Kolben_Magazin_LFR                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                     Kolben_Ausschub_LBK                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                     Kolben_Ausschub_LFR                                     BOOL    0 "                                                            TRUE"    1    1    1    2    0    0         
+                   Kolben_Hochfahren_LBK                                     BOOL    0 "                                                            TRUE"    1    1    1    2    0    0         
+                   Kolben_Hochfahren_LFR                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                       Kolben_Presse_LBK                                     BOOL    0 "                                                            TRUE"    1    1    1    2    0    0         
+                       Kolben_Presse_LFR                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                     Lichttaster_Austrag                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                     Lichttaster_Magazin                                     BOOL    0 "                                                            TRUE"    1    1    1    2    0    0         
+                       ComTCP_SimOutputs                     ComTCP_OUTPUTS_32BIT    0 "                                                               *"    0   24    1    0    0    1         
+                              NumSignals                                      INT    0 "                                                               8"    1    3    1   10    0    0         
+                      Kolben_Magazin_FWD                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                      Kolben_Magazin_BWD                                     BOOL    0 "                                                            TRUE"    1    1    1    2    0    0         
+                     Kolben_Ausschub_FWD                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                     Kolben_Ausschub_BWD                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                   Kolben_Hochfahren_FWD                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                   Kolben_Hochfahren_BWD                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                       Kolben_Presse_FWD                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                       Kolben_Presse_BWD                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         

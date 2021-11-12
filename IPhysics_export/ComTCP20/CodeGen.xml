@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeGen>
+	<Header date="2021-11-11" time="12:10:57" organization="machineering" application="iPhysics_2.4.master" build="e734d0bb0" version="2.4.12436.master" architecture="Windows 64 Bit"/>
+	<Manufacturer name="BuR Automation Studio 4"/>
+	<Interface type="ComTCP" name="ComTCP20">
+		<Server host="127.0.0.1" hostHex="7f000001" port="5001" portHex="1389" interval="10" protocol="TCP" packedMode="0" actAsServer="1" hostIP1="127" hostIP2="0" hostIP3="0" hostIP4="1"/>
+		<Inputs Count="6" SizeInBytes="24" SizeInBytes_PackedMessage="32">
+			<Connection Name="Kolben_CurveLength" From="_Gesamtmodell_Hydraulik_Presse_Gesamtmodell?Kolben_CurveLength" Type="FLOAT32" S7Type="REAL" SizeInBytes="4" CodesysType="REAL" StructType="" ByteIndex="0" PackedByteIndex="20" PackedBitIndex="0" HardwareAddress="ED0"/>
+			<Connection Name="Kolben_AXIS" From="_Gesamtmodell_Hydraulik_Presse_Gesamtmodell?Kolben_AXIS" Type="FLOAT32" S7Type="REAL" SizeInBytes="4" CodesysType="REAL" StructType="" ByteIndex="4" PackedByteIndex="24" PackedBitIndex="0" HardwareAddress="ED4"/>
+			<Connection Name="Kolben_LBK" From="_Gesamtmodell_Hydraulik_Presse_Gesamtmodell?Kolben_LBK" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="8" PackedByteIndex="28" PackedBitIndex="0" HardwareAddress="E8.0"/>
+			<Connection Name="Kolben_LFR" From="_Gesamtmodell_Hydraulik_Presse_Gesamtmodell?Kolben_LFR" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="12" PackedByteIndex="28" PackedBitIndex="1" HardwareAddress="E8.1"/>
+			<Connection Name="Kolben_Kolben_KinActual_Val" From="_Gesamtmodell_Hydraulik_Presse_Gesamtmodell?Kolben_Kolben_KinActual_Val" Type="FLOAT32" S7Type="REAL" SizeInBytes="4" CodesysType="REAL" StructType="" ByteIndex="16" PackedByteIndex="28" PackedBitIndex="2" HardwareAddress="ED12"/>
+			<Connection Name="Lichttsaster_IR" From="_Gesamtmodell_Hydraulik_Presse_Gesamtmodell?Lichttsaster_IR" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="20" PackedByteIndex="32" PackedBitIndex="0" HardwareAddress="E16.0"/>
+		</Inputs>
+		<Outputs Count="10" SizeInBytes="40" SizeInBytes_PackedMessage="36">
+			<Connection Name="Kolben_MasterMaxSpeed" From="_Gesamtmodell_Hydraulik_Presse_Gesamtmodell?Kolben_MasterMaxSpeed" Type="FLOAT32" S7Type="REAL" SizeInBytes="4" CodesysType="REAL" StructType="" ByteIndex="0" PackedByteIndex="20" PackedBitIndex="0" HardwareAddress="AD0"/>
+			<Connection Name="Kolben_MasterForward" From="_Gesamtmodell_Hydraulik_Presse_Gesamtmodell?Kolben_MasterForward" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="4" PackedByteIndex="24" PackedBitIndex="0" HardwareAddress="A4.1"/>
+			<Connection Name="Kolben_MasterBack" From="_Gesamtmodell_Hydraulik_Presse_Gesamtmodell?Kolben_MasterBack" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="8" PackedByteIndex="24" PackedBitIndex="1" HardwareAddress="A4.2"/>
+			<Connection Name="Kolben_MasterInhibit" From="_Gesamtmodell_Hydraulik_Presse_Gesamtmodell?Kolben_MasterInhibit" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="12" PackedByteIndex="24" PackedBitIndex="2" HardwareAddress="A4.3"/>
+			<Connection Name="Kolben_MasterPos" From="_Gesamtmodell_Hydraulik_Presse_Gesamtmodell?Kolben_MasterPos" Type="FLOAT32" S7Type="REAL" SizeInBytes="4" CodesysType="REAL" StructType="" ByteIndex="16" PackedByteIndex="24" PackedBitIndex="3" HardwareAddress="AD8"/>
+			<Connection Name="Kolben_Override" From="_Gesamtmodell_Hydraulik_Presse_Gesamtmodell?Kolben_Override" Type="FLOAT32" S7Type="REAL" SizeInBytes="4" CodesysType="REAL" StructType="" ByteIndex="20" PackedByteIndex="28" PackedBitIndex="0" HardwareAddress="AD12"/>
+			<Connection Name="Kolben_MAX_SPD" From="_Gesamtmodell_Hydraulik_Presse_Gesamtmodell?Kolben_MAX_SPD" Type="FLOAT32" S7Type="REAL" SizeInBytes="4" CodesysType="REAL" StructType="" ByteIndex="24" PackedByteIndex="32" PackedBitIndex="0" HardwareAddress="AD16"/>
+			<Connection Name="Kolben_FWD" From="_Gesamtmodell_Hydraulik_Presse_Gesamtmodell?Kolben_FWD" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="28" PackedByteIndex="36" PackedBitIndex="0" HardwareAddress="A20.0"/>
+			<Connection Name="Kolben_KinInhibit" From="_Gesamtmodell_Hydraulik_Presse_Gesamtmodell?Kolben_KinInhibit" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="32" PackedByteIndex="36" PackedBitIndex="1" HardwareAddress="A20.1"/>
+			<Connection Name="Kolben_BWD" From="_Gesamtmodell_Hydraulik_Presse_Gesamtmodell?Kolben_BWD" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="36" PackedByteIndex="36" PackedBitIndex="2" HardwareAddress="A20.2"/>
+		</Outputs>
+	</Interface>
+	<Functions/>
+	<Tasks>
+		<Task Name="PLC" CycleTime="10" Priority="0"/>
+	</Tasks>
+	<Mechatronics>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[Gesamtmodell]]></ComponentName>
+			<Function><![CDATA[ControlTag]]></Function>
+			<ItemPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell]]></ItemPath>
+			<PLCName><![CDATA[PLC1]]></PLCName>
+			<PLCTagName><![CDATA[Kolben_CurveLength]]></PLCTagName>
+			<SymbolName><![CDATA[Kolben_CurveLength]]></SymbolName>
+			<Type><![CDATA[FLOAT32]]></Type>
+			<VarComment><![CDATA[(Gesamtmodell) (ControlTag) - Kolben_CurveLength]]></VarComment>
+			<VarName><![CDATA[Kolben_CurveLength]]></VarName>
+			<VarPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell?Kolben_CurveLength]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[Gesamtmodell]]></ComponentName>
+			<Function><![CDATA[ControlTag]]></Function>
+			<ItemPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell]]></ItemPath>
+			<PLCName><![CDATA[PLC1]]></PLCName>
+			<PLCTagName><![CDATA[Kolben_AXIS]]></PLCTagName>
+			<SymbolName><![CDATA[Kolben_AXIS]]></SymbolName>
+			<Type><![CDATA[FLOAT32]]></Type>
+			<VarComment><![CDATA[(Gesamtmodell) (ControlTag) - Kolben_AXIS]]></VarComment>
+			<VarName><![CDATA[Kolben_AXIS]]></VarName>
+			<VarPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell?Kolben_AXIS]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[Gesamtmodell]]></ComponentName>
+			<Function><![CDATA[ControlTag]]></Function>
+			<ItemPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell]]></ItemPath>
+			<PLCName><![CDATA[PLC1]]></PLCName>
+			<PLCTagName><![CDATA[Kolben_LBK]]></PLCTagName>
+			<SymbolName><![CDATA[Kolben_LBK]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Gesamtmodell) (ControlTag) - Kolben_LBK]]></VarComment>
+			<VarName><![CDATA[Kolben_LBK]]></VarName>
+			<VarPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell?Kolben_LBK]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[Gesamtmodell]]></ComponentName>
+			<Function><![CDATA[ControlTag]]></Function>
+			<ItemPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell]]></ItemPath>
+			<PLCName><![CDATA[PLC1]]></PLCName>
+			<PLCTagName><![CDATA[Kolben_LFR]]></PLCTagName>
+			<SymbolName><![CDATA[Kolben_LFR]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Gesamtmodell) (ControlTag) - Kolben_LFR]]></VarComment>
+			<VarName><![CDATA[Kolben_LFR]]></VarName>
+			<VarPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell?Kolben_LFR]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[Gesamtmodell]]></ComponentName>
+			<Function><![CDATA[ControlTag]]></Function>
+			<ItemPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell]]></ItemPath>
+			<PLCName><![CDATA[PLC1]]></PLCName>
+			<PLCTagName><![CDATA[Kolben_Kolben_KinActual_Val]]></PLCTagName>
+			<SymbolName><![CDATA[Kolben_Kolben_KinActual_Val]]></SymbolName>
+			<Type><![CDATA[FLOAT32]]></Type>
+			<VarComment><![CDATA[(Gesamtmodell) (ControlTag) - Kolben_Kolben_KinActual_Val]]></VarComment>
+			<VarName><![CDATA[Kolben_Kolben_KinActual_Val]]></VarName>
+			<VarPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell?Kolben_Kolben_KinActual_Val]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[Gesamtmodell]]></ComponentName>
+			<Function><![CDATA[ControlTag]]></Function>
+			<ItemPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell]]></ItemPath>
+			<PLCName><![CDATA[PLC1]]></PLCName>
+			<PLCTagName><![CDATA[Lichttsaster_IR]]></PLCTagName>
+			<SymbolName><![CDATA[Lichttsaster_IR]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Gesamtmodell) (ControlTag) - Lichttsaster_IR]]></VarComment>
+			<VarName><![CDATA[Lichttsaster_IR]]></VarName>
+			<VarPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell?Lichttsaster_IR]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[Gesamtmodell]]></ComponentName>
+			<DriveType><![CDATA[BitMotor]]></DriveType>
+			<Function><![CDATA[ControlTag]]></Function>
+			<ItemPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell]]></ItemPath>
+			<PLCName><![CDATA[PLC1]]></PLCName>
+			<PLCTagName><![CDATA[Kolben_MasterMaxSpeed]]></PLCTagName>
+			<SymbolName><![CDATA[Kolben_MasterMaxSpeed]]></SymbolName>
+			<Type><![CDATA[FLOAT32]]></Type>
+			<VarComment><![CDATA[(Gesamtmodell) (ControlTag) - Kolben_MasterMaxSpeed]]></VarComment>
+			<VarName><![CDATA[Kolben_MasterMaxSpeed]]></VarName>
+			<VarPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell?Kolben_MasterMaxSpeed]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[Gesamtmodell]]></ComponentName>
+			<DriveType><![CDATA[BitMotor]]></DriveType>
+			<Function><![CDATA[ControlTag]]></Function>
+			<ItemPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell]]></ItemPath>
+			<PLCName><![CDATA[PLC1]]></PLCName>
+			<PLCTagName><![CDATA[Kolben_MasterForward]]></PLCTagName>
+			<SymbolName><![CDATA[Kolben_MasterForward]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Gesamtmodell) (ControlTag) - Kolben_MasterForward]]></VarComment>
+			<VarName><![CDATA[Kolben_MasterForward]]></VarName>
+			<VarPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell?Kolben_MasterForward]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[Gesamtmodell]]></ComponentName>
+			<DriveType><![CDATA[BitMotor]]></DriveType>
+			<Function><![CDATA[ControlTag]]></Function>
+			<ItemPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell]]></ItemPath>
+			<PLCName><![CDATA[PLC1]]></PLCName>
+			<PLCTagName><![CDATA[Kolben_MasterBack]]></PLCTagName>
+			<SymbolName><![CDATA[Kolben_MasterBack]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Gesamtmodell) (ControlTag) - Kolben_MasterBack]]></VarComment>
+			<VarName><![CDATA[Kolben_MasterBack]]></VarName>
+			<VarPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell?Kolben_MasterBack]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[Gesamtmodell]]></ComponentName>
+			<DriveType><![CDATA[BitMotor]]></DriveType>
+			<Function><![CDATA[ControlTag]]></Function>
+			<ItemPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell]]></ItemPath>
+			<PLCName><![CDATA[PLC1]]></PLCName>
+			<PLCTagName><![CDATA[Kolben_MasterInhibit]]></PLCTagName>
+			<SymbolName><![CDATA[Kolben_MasterInhibit]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Gesamtmodell) (ControlTag) - Kolben_MasterInhibit]]></VarComment>
+			<VarName><![CDATA[Kolben_MasterInhibit]]></VarName>
+			<VarPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell?Kolben_MasterInhibit]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[Gesamtmodell]]></ComponentName>
+			<Function><![CDATA[ControlTag]]></Function>
+			<ItemPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell]]></ItemPath>
+			<PLCName><![CDATA[PLC1]]></PLCName>
+			<PLCTagName><![CDATA[Kolben_MasterPos]]></PLCTagName>
+			<SymbolName><![CDATA[Kolben_MasterPos]]></SymbolName>
+			<Type><![CDATA[FLOAT32]]></Type>
+			<VarComment><![CDATA[(Gesamtmodell) (ControlTag) - Kolben_MasterPos]]></VarComment>
+			<VarName><![CDATA[Kolben_MasterPos]]></VarName>
+			<VarPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell?Kolben_MasterPos]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[Gesamtmodell]]></ComponentName>
+			<Function><![CDATA[ControlTag]]></Function>
+			<ItemPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell]]></ItemPath>
+			<PLCName><![CDATA[PLC1]]></PLCName>
+			<PLCTagName><![CDATA[Kolben_Override]]></PLCTagName>
+			<SymbolName><![CDATA[Kolben_Override]]></SymbolName>
+			<Type><![CDATA[FLOAT32]]></Type>
+			<VarComment><![CDATA[(Gesamtmodell) (ControlTag) - Kolben_Override]]></VarComment>
+			<VarName><![CDATA[Kolben_Override]]></VarName>
+			<VarPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell?Kolben_Override]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[Gesamtmodell]]></ComponentName>
+			<DriveType><![CDATA[ValveX2Bistable]]></DriveType>
+			<Function><![CDATA[ControlTag]]></Function>
+			<ItemPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell]]></ItemPath>
+			<PLCName><![CDATA[PLC1]]></PLCName>
+			<PLCTagName><![CDATA[Kolben_MAX_SPD]]></PLCTagName>
+			<SymbolName><![CDATA[Kolben_MAX_SPD]]></SymbolName>
+			<Type><![CDATA[FLOAT32]]></Type>
+			<VarComment><![CDATA[(Gesamtmodell) (ControlTag) - Kolben_MAX_SPD]]></VarComment>
+			<VarName><![CDATA[Kolben_MAX_SPD]]></VarName>
+			<VarPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell?Kolben_MAX_SPD]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[Gesamtmodell]]></ComponentName>
+			<DriveType><![CDATA[ValveX2Bistable]]></DriveType>
+			<Function><![CDATA[ControlTag]]></Function>
+			<ItemPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell]]></ItemPath>
+			<PLCName><![CDATA[PLC1]]></PLCName>
+			<PLCTagName><![CDATA[Kolben_FWD]]></PLCTagName>
+			<SymbolName><![CDATA[Kolben_FWD]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Gesamtmodell) (ControlTag) - Kolben_FWD]]></VarComment>
+			<VarName><![CDATA[Kolben_FWD]]></VarName>
+			<VarPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell?Kolben_FWD]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[Gesamtmodell]]></ComponentName>
+			<DriveType><![CDATA[ValveX2Bistable]]></DriveType>
+			<Function><![CDATA[ControlTag]]></Function>
+			<ItemPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell]]></ItemPath>
+			<PLCName><![CDATA[PLC1]]></PLCName>
+			<PLCTagName><![CDATA[Kolben_KinInhibit]]></PLCTagName>
+			<SymbolName><![CDATA[Kolben_KinInhibit]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Gesamtmodell) (ControlTag) - Kolben_KinInhibit]]></VarComment>
+			<VarName><![CDATA[Kolben_KinInhibit]]></VarName>
+			<VarPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell?Kolben_KinInhibit]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[Gesamtmodell]]></ComponentName>
+			<DriveType><![CDATA[ValveX2Bistable]]></DriveType>
+			<Function><![CDATA[ControlTag]]></Function>
+			<ItemPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell]]></ItemPath>
+			<PLCName><![CDATA[PLC1]]></PLCName>
+			<PLCTagName><![CDATA[Kolben_BWD]]></PLCTagName>
+			<SymbolName><![CDATA[Kolben_BWD]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Gesamtmodell) (ControlTag) - Kolben_BWD]]></VarComment>
+			<VarName><![CDATA[Kolben_BWD]]></VarName>
+			<VarPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell?Kolben_BWD]]></VarPath>
+		</Entity>
+	</Mechatronics>
+</CodeGen>

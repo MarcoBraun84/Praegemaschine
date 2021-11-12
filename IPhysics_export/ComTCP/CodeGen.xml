@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeGen>
+	<Header date="2021-11-11" time="14:50:37" organization="machineering" application="iPhysics_2.4.master" build="e734d0bb0" version="2.4.12436.master" architecture="Windows 64 Bit"/>
+	<Manufacturer name="BuR Automation Studio 4"/>
+	<Interface type="ComTCP" name="ComTCP">
+		<Server host="127.0.0.1" hostHex="7f000001" port="5002" portHex="138a" interval="10" protocol="TCP" packedMode="0" actAsServer="1" hostIP1="127" hostIP2="0" hostIP3="0" hostIP4="1"/>
+		<Inputs Count="10" SizeInBytes="40" SizeInBytes_PackedMessage="21">
+			<Connection Name="Kolben_Magazin_LBK" From="_Gesamtmodell_Hydraulik_Presse_Gesamtmodell_Hydraulikzylinder_Magazin_Kolben_Magazin?Kolben_Magazin_LBK" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="0" PackedByteIndex="20" PackedBitIndex="0" HardwareAddress="E0.0"/>
+			<Connection Name="Kolben_Magazin_LFR" From="_Gesamtmodell_Hydraulik_Presse_Gesamtmodell_Hydraulikzylinder_Magazin_Kolben_Magazin?Kolben_Magazin_LFR" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="4" PackedByteIndex="20" PackedBitIndex="1" HardwareAddress="E4.1"/>
+			<Connection Name="Kolben_Ausschub_LBK" From="_Gesamtmodell_Hydraulik_Presse_Gesamtmodell_Hydraulikzylinder_Magazin_Kolben_Magazin?Kolben_Ausschub_LBK" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="8" PackedByteIndex="20" PackedBitIndex="2" HardwareAddress="E4.2"/>
+			<Connection Name="Kolben_Ausschub_LFR" From="_Gesamtmodell_Hydraulik_Presse_Gesamtmodell_Hydraulikzylinder_Magazin_Kolben_Magazin?Kolben_Ausschub_LFR" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="12" PackedByteIndex="20" PackedBitIndex="3" HardwareAddress="E4.3"/>
+			<Connection Name="Kolben_Hochfahren_LBK" From="_Gesamtmodell_Hydraulik_Presse_Gesamtmodell_Hydraulikzylinder_Magazin_Kolben_Magazin?Kolben_Hochfahren_LBK" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="16" PackedByteIndex="20" PackedBitIndex="4" HardwareAddress="E4.4"/>
+			<Connection Name="Kolben_Hochfahren_LFR" From="_Gesamtmodell_Hydraulik_Presse_Gesamtmodell_Hydraulikzylinder_Magazin_Kolben_Magazin?Kolben_Hochfahren_LFR" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="20" PackedByteIndex="20" PackedBitIndex="5" HardwareAddress="E4.5"/>
+			<Connection Name="Kolben_Presse_LBK" From="_Gesamtmodell_Hydraulik_Presse_Gesamtmodell_Hydraulikzylinder_Magazin_Kolben_Magazin?Kolben_Presse_LBK" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="24" PackedByteIndex="20" PackedBitIndex="6" HardwareAddress="E4.6"/>
+			<Connection Name="Kolben_Presse_LFR" From="_Gesamtmodell_Hydraulik_Presse_Gesamtmodell_Hydraulikzylinder_Magazin_Kolben_Magazin?Kolben_Presse_LFR" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="28" PackedByteIndex="20" PackedBitIndex="7" HardwareAddress="E4.7"/>
+			<Connection Name="Neue_Komponente2_IR" From="_Gesamtmodell_Hydraulik_Presse_Gesamtmodell_Hydraulikzylinder_Magazin_Kolben_Magazin?Neue_Komponente2_IR" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="32" PackedByteIndex="21" PackedBitIndex="0" HardwareAddress="E5.0"/>
+			<Connection Name="Neue_Komponente3_IR" From="_Gesamtmodell_Hydraulik_Presse_Gesamtmodell_Hydraulikzylinder_Magazin_Kolben_Magazin?Neue_Komponente3_IR" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="36" PackedByteIndex="21" PackedBitIndex="1" HardwareAddress="E5.1"/>
+		</Inputs>
+		<Outputs Count="8" SizeInBytes="32" SizeInBytes_PackedMessage="21">
+			<Connection Name="Kolben_Magazin_FWD" From="_Gesamtmodell_Hydraulik_Presse_Gesamtmodell_Hydraulikzylinder_Magazin_Kolben_Magazin?Kolben_Magazin_FWD" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="0" PackedByteIndex="20" PackedBitIndex="0" HardwareAddress="A0.0"/>
+			<Connection Name="Kolben_Magazin_BWD" From="_Gesamtmodell_Hydraulik_Presse_Gesamtmodell_Hydraulikzylinder_Magazin_Kolben_Magazin?Kolben_Magazin_BWD" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="4" PackedByteIndex="20" PackedBitIndex="1" HardwareAddress="A4.1"/>
+			<Connection Name="Kolben_Ausschub_FWD" From="_Gesamtmodell_Hydraulik_Presse_Gesamtmodell_Hydraulikzylinder_Magazin_Kolben_Magazin?Kolben_Ausschub_FWD" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="8" PackedByteIndex="20" PackedBitIndex="2" HardwareAddress="A4.2"/>
+			<Connection Name="Kolben_Ausschub_BWD" From="_Gesamtmodell_Hydraulik_Presse_Gesamtmodell_Hydraulikzylinder_Magazin_Kolben_Magazin?Kolben_Ausschub_BWD" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="12" PackedByteIndex="20" PackedBitIndex="3" HardwareAddress="A4.3"/>
+			<Connection Name="Kolben_Hochfahren_FWD" From="_Gesamtmodell_Hydraulik_Presse_Gesamtmodell_Hydraulikzylinder_Magazin_Kolben_Magazin?Kolben_Hochfahren_FWD" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="16" PackedByteIndex="20" PackedBitIndex="4" HardwareAddress="A4.4"/>
+			<Connection Name="Kolben_Hochfahren_BWD" From="_Gesamtmodell_Hydraulik_Presse_Gesamtmodell_Hydraulikzylinder_Magazin_Kolben_Magazin?Kolben_Hochfahren_BWD" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="20" PackedByteIndex="20" PackedBitIndex="5" HardwareAddress="A4.5"/>
+			<Connection Name="Kolben_Presse_FWD" From="_Gesamtmodell_Hydraulik_Presse_Gesamtmodell_Hydraulikzylinder_Magazin_Kolben_Magazin?Kolben_Presse_FWD" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="24" PackedByteIndex="20" PackedBitIndex="6" HardwareAddress="A4.6"/>
+			<Connection Name="Kolben_Presse_BWD" From="_Gesamtmodell_Hydraulik_Presse_Gesamtmodell_Hydraulikzylinder_Magazin_Kolben_Magazin?Kolben_Presse_BWD" Type="BOOL" S7Type="BOOL" SizeInBytes="4" CodesysType="BOOL" StructType="" ByteIndex="28" PackedByteIndex="20" PackedBitIndex="7" HardwareAddress="A4.7"/>
+		</Outputs>
+	</Interface>
+	<Functions/>
+	<Tasks>
+		<Task Name="PLC" CycleTime="10" Priority="0"/>
+	</Tasks>
+	<Mechatronics>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[Kolben_Magazin]]></ComponentName>
+			<DeviceAddress><![CDATA[]]></DeviceAddress>
+			<DeviceName><![CDATA[]]></DeviceName>
+			<Function><![CDATA[ControlTag]]></Function>
+			<ItemPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell/Hydraulikzylinder_Magazin/Kolben_Magazin]]></ItemPath>
+			<PLCAddress><![CDATA[]]></PLCAddress>
+			<PLCName><![CDATA[PLC1]]></PLCName>
+			<PLCTagComment><![CDATA[]]></PLCTagComment>
+			<PLCTagName><![CDATA[Kolben_Magazin_LBK]]></PLCTagName>
+			<PLCTypeOverride><![CDATA[]]></PLCTypeOverride>
+			<SymbolName><![CDATA[Kolben_Magazin_LBK]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Kolben_Magazin) (ControlTag) - Kolben_Magazin_LBK]]></VarComment>
+			<VarName><![CDATA[Kolben_Magazin_LBK]]></VarName>
+			<VarPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell/Hydraulikzylinder_Magazin/Kolben_Magazin?Kolben_Magazin_LBK]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[Kolben_Magazin]]></ComponentName>
+			<DeviceAddress><![CDATA[]]></DeviceAddress>
+			<DeviceName><![CDATA[]]></DeviceName>
+			<Function><![CDATA[ControlTag]]></Function>
+			<ItemPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell/Hydraulikzylinder_Magazin/Kolben_Magazin]]></ItemPath>
+			<PLCAddress><![CDATA[]]></PLCAddress>
+			<PLCName><![CDATA[PLC1]]></PLCName>
+			<PLCTagComment><![CDATA[]]></PLCTagComment>
+			<PLCTagName><![CDATA[Kolben_Magazin_LFR]]></PLCTagName>
+			<PLCTypeOverride><![CDATA[]]></PLCTypeOverride>
+			<SymbolName><![CDATA[Kolben_Magazin_LFR]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Kolben_Magazin) (ControlTag) - Kolben_Magazin_LFR]]></VarComment>
+			<VarName><![CDATA[Kolben_Magazin_LFR]]></VarName>
+			<VarPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell/Hydraulikzylinder_Magazin/Kolben_Magazin?Kolben_Magazin_LFR]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[Kolben_Magazin]]></ComponentName>
+			<DeviceAddress><![CDATA[]]></DeviceAddress>
+			<DeviceName><![CDATA[]]></DeviceName>
+			<Function><![CDATA[ControlTag]]></Function>
+			<ItemPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell/Hydraulikzylinder_Magazin/Kolben_Magazin]]></ItemPath>
+			<PLCAddress><![CDATA[]]></PLCAddress>
+			<PLCName><![CDATA[PLC1]]></PLCName>
+			<PLCTagComment><![CDATA[]]></PLCTagComment>
+			<PLCTagName><![CDATA[Kolben_Ausschub_LBK]]></PLCTagName>
+			<PLCTypeOverride><![CDATA[]]></PLCTypeOverride>
+			<SymbolName><![CDATA[Kolben_Ausschub_LBK]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Kolben_Magazin) (ControlTag) - Kolben_Ausschub_LBK]]></VarComment>
+			<VarName><![CDATA[Kolben_Ausschub_LBK]]></VarName>
+			<VarPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell/Hydraulikzylinder_Magazin/Kolben_Magazin?Kolben_Ausschub_LBK]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[Kolben_Magazin]]></ComponentName>
+			<DeviceAddress><![CDATA[]]></DeviceAddress>
+			<DeviceName><![CDATA[]]></DeviceName>
+			<Function><![CDATA[ControlTag]]></Function>
+			<ItemPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell/Hydraulikzylinder_Magazin/Kolben_Magazin]]></ItemPath>
+			<PLCAddress><![CDATA[]]></PLCAddress>
+			<PLCName><![CDATA[PLC1]]></PLCName>
+			<PLCTagComment><![CDATA[]]></PLCTagComment>
+			<PLCTagName><![CDATA[Kolben_Ausschub_LFR]]></PLCTagName>
+			<PLCTypeOverride><![CDATA[]]></PLCTypeOverride>
+			<SymbolName><![CDATA[Kolben_Ausschub_LFR]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Kolben_Magazin) (ControlTag) - Kolben_Ausschub_LFR]]></VarComment>
+			<VarName><![CDATA[Kolben_Ausschub_LFR]]></VarName>
+			<VarPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell/Hydraulikzylinder_Magazin/Kolben_Magazin?Kolben_Ausschub_LFR]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[Kolben_Magazin]]></ComponentName>
+			<DeviceAddress><![CDATA[]]></DeviceAddress>
+			<DeviceName><![CDATA[]]></DeviceName>
+			<Function><![CDATA[ControlTag]]></Function>
+			<ItemPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell/Hydraulikzylinder_Magazin/Kolben_Magazin]]></ItemPath>
+			<PLCAddress><![CDATA[]]></PLCAddress>
+			<PLCName><![CDATA[PLC1]]></PLCName>
+			<PLCTagComment><![CDATA[]]></PLCTagComment>
+			<PLCTagName><![CDATA[Kolben_Hochfahren_LBK]]></PLCTagName>
+			<PLCTypeOverride><![CDATA[]]></PLCTypeOverride>
+			<SymbolName><![CDATA[Kolben_Hochfahren_LBK]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Kolben_Magazin) (ControlTag) - Kolben_Hochfahren_LBK]]></VarComment>
+			<VarName><![CDATA[Kolben_Hochfahren_LBK]]></VarName>
+			<VarPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell/Hydraulikzylinder_Magazin/Kolben_Magazin?Kolben_Hochfahren_LBK]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[Kolben_Magazin]]></ComponentName>
+			<DeviceAddress><![CDATA[]]></DeviceAddress>
+			<DeviceName><![CDATA[]]></DeviceName>
+			<Function><![CDATA[ControlTag]]></Function>
+			<ItemPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell/Hydraulikzylinder_Magazin/Kolben_Magazin]]></ItemPath>
+			<PLCAddress><![CDATA[]]></PLCAddress>
+			<PLCName><![CDATA[PLC1]]></PLCName>
+			<PLCTagComment><![CDATA[]]></PLCTagComment>
+			<PLCTagName><![CDATA[Kolben_Hochfahren_LFR]]></PLCTagName>
+			<PLCTypeOverride><![CDATA[]]></PLCTypeOverride>
+			<SymbolName><![CDATA[Kolben_Hochfahren_LFR]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Kolben_Magazin) (ControlTag) - Kolben_Hochfahren_LFR]]></VarComment>
+			<VarName><![CDATA[Kolben_Hochfahren_LFR]]></VarName>
+			<VarPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell/Hydraulikzylinder_Magazin/Kolben_Magazin?Kolben_Hochfahren_LFR]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[Kolben_Magazin]]></ComponentName>
+			<DeviceAddress><![CDATA[]]></DeviceAddress>
+			<DeviceName><![CDATA[]]></DeviceName>
+			<Function><![CDATA[ControlTag]]></Function>
+			<ItemPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell/Hydraulikzylinder_Magazin/Kolben_Magazin]]></ItemPath>
+			<PLCAddress><![CDATA[]]></PLCAddress>
+			<PLCName><![CDATA[PLC1]]></PLCName>
+			<PLCTagComment><![CDATA[]]></PLCTagComment>
+			<PLCTagName><![CDATA[Kolben_Presse_LBK]]></PLCTagName>
+			<PLCTypeOverride><![CDATA[]]></PLCTypeOverride>
+			<SymbolName><![CDATA[Kolben_Presse_LBK]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Kolben_Magazin) (ControlTag) - Kolben_Presse_LBK]]></VarComment>
+			<VarName><![CDATA[Kolben_Presse_LBK]]></VarName>
+			<VarPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell/Hydraulikzylinder_Magazin/Kolben_Magazin?Kolben_Presse_LBK]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[Kolben_Magazin]]></ComponentName>
+			<DeviceAddress><![CDATA[]]></DeviceAddress>
+			<DeviceName><![CDATA[]]></DeviceName>
+			<Function><![CDATA[ControlTag]]></Function>
+			<ItemPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell/Hydraulikzylinder_Magazin/Kolben_Magazin]]></ItemPath>
+			<PLCAddress><![CDATA[]]></PLCAddress>
+			<PLCName><![CDATA[PLC1]]></PLCName>
+			<PLCTagComment><![CDATA[]]></PLCTagComment>
+			<PLCTagName><![CDATA[Kolben_Presse_LFR]]></PLCTagName>
+			<PLCTypeOverride><![CDATA[]]></PLCTypeOverride>
+			<SymbolName><![CDATA[Kolben_Presse_LFR]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Kolben_Magazin) (ControlTag) - Kolben_Presse_LFR]]></VarComment>
+			<VarName><![CDATA[Kolben_Presse_LFR]]></VarName>
+			<VarPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell/Hydraulikzylinder_Magazin/Kolben_Magazin?Kolben_Presse_LFR]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[Kolben_Magazin]]></ComponentName>
+			<DeviceAddress><![CDATA[]]></DeviceAddress>
+			<DeviceName><![CDATA[]]></DeviceName>
+			<Function><![CDATA[ControlTag]]></Function>
+			<ItemPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell/Hydraulikzylinder_Magazin/Kolben_Magazin]]></ItemPath>
+			<PLCAddress><![CDATA[]]></PLCAddress>
+			<PLCName><![CDATA[PLC1]]></PLCName>
+			<PLCTagComment><![CDATA[]]></PLCTagComment>
+			<PLCTagName><![CDATA[Neue_Komponente2_IR]]></PLCTagName>
+			<PLCTypeOverride><![CDATA[]]></PLCTypeOverride>
+			<SymbolName><![CDATA[Neue_Komponente2_IR]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Kolben_Magazin) (ControlTag) - Neue_Komponente2_IR]]></VarComment>
+			<VarName><![CDATA[Neue_Komponente2_IR]]></VarName>
+			<VarPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell/Hydraulikzylinder_Magazin/Kolben_Magazin?Neue_Komponente2_IR]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[READ]]></Access>
+			<ComponentName><![CDATA[Kolben_Magazin]]></ComponentName>
+			<DeviceAddress><![CDATA[]]></DeviceAddress>
+			<DeviceName><![CDATA[]]></DeviceName>
+			<Function><![CDATA[ControlTag]]></Function>
+			<ItemPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell/Hydraulikzylinder_Magazin/Kolben_Magazin]]></ItemPath>
+			<PLCAddress><![CDATA[]]></PLCAddress>
+			<PLCName><![CDATA[PLC1]]></PLCName>
+			<PLCTagComment><![CDATA[]]></PLCTagComment>
+			<PLCTagName><![CDATA[Neue_Komponente3_IR]]></PLCTagName>
+			<PLCTypeOverride><![CDATA[]]></PLCTypeOverride>
+			<SymbolName><![CDATA[Neue_Komponente3_IR]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Kolben_Magazin) (ControlTag) - Neue_Komponente3_IR]]></VarComment>
+			<VarName><![CDATA[Neue_Komponente3_IR]]></VarName>
+			<VarPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell/Hydraulikzylinder_Magazin/Kolben_Magazin?Neue_Komponente3_IR]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[Kolben_Magazin]]></ComponentName>
+			<DeviceAddress><![CDATA[]]></DeviceAddress>
+			<DeviceName><![CDATA[]]></DeviceName>
+			<DriveType><![CDATA[ValveX2Bistable]]></DriveType>
+			<Function><![CDATA[ControlTag]]></Function>
+			<ItemPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell/Hydraulikzylinder_Magazin/Kolben_Magazin]]></ItemPath>
+			<PLCAddress><![CDATA[]]></PLCAddress>
+			<PLCName><![CDATA[PLC1]]></PLCName>
+			<PLCTagComment><![CDATA[]]></PLCTagComment>
+			<PLCTagName><![CDATA[Kolben_Magazin_FWD]]></PLCTagName>
+			<PLCTypeOverride><![CDATA[]]></PLCTypeOverride>
+			<SymbolName><![CDATA[Kolben_Magazin_FWD]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Kolben_Magazin) (ControlTag) - Kolben_Magazin_FWD]]></VarComment>
+			<VarName><![CDATA[Kolben_Magazin_FWD]]></VarName>
+			<VarPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell/Hydraulikzylinder_Magazin/Kolben_Magazin?Kolben_Magazin_FWD]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[Kolben_Magazin]]></ComponentName>
+			<DeviceAddress><![CDATA[]]></DeviceAddress>
+			<DeviceName><![CDATA[]]></DeviceName>
+			<DriveType><![CDATA[ValveX2Bistable]]></DriveType>
+			<Function><![CDATA[ControlTag]]></Function>
+			<ItemPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell/Hydraulikzylinder_Magazin/Kolben_Magazin]]></ItemPath>
+			<PLCAddress><![CDATA[]]></PLCAddress>
+			<PLCName><![CDATA[PLC1]]></PLCName>
+			<PLCTagComment><![CDATA[]]></PLCTagComment>
+			<PLCTagName><![CDATA[Kolben_Magazin_BWD]]></PLCTagName>
+			<PLCTypeOverride><![CDATA[]]></PLCTypeOverride>
+			<SymbolName><![CDATA[Kolben_Magazin_BWD]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Kolben_Magazin) (ControlTag) - Kolben_Magazin_BWD]]></VarComment>
+			<VarName><![CDATA[Kolben_Magazin_BWD]]></VarName>
+			<VarPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell/Hydraulikzylinder_Magazin/Kolben_Magazin?Kolben_Magazin_BWD]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[Kolben_Magazin]]></ComponentName>
+			<DeviceAddress><![CDATA[]]></DeviceAddress>
+			<DeviceName><![CDATA[]]></DeviceName>
+			<DriveType><![CDATA[ValveX2Bistable]]></DriveType>
+			<Function><![CDATA[ControlTag]]></Function>
+			<ItemPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell/Hydraulikzylinder_Magazin/Kolben_Magazin]]></ItemPath>
+			<PLCAddress><![CDATA[]]></PLCAddress>
+			<PLCName><![CDATA[PLC1]]></PLCName>
+			<PLCTagComment><![CDATA[]]></PLCTagComment>
+			<PLCTagName><![CDATA[Kolben_Ausschub_FWD]]></PLCTagName>
+			<PLCTypeOverride><![CDATA[]]></PLCTypeOverride>
+			<SymbolName><![CDATA[Kolben_Ausschub_FWD]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Kolben_Magazin) (ControlTag) - Kolben_Ausschub_FWD]]></VarComment>
+			<VarName><![CDATA[Kolben_Ausschub_FWD]]></VarName>
+			<VarPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell/Hydraulikzylinder_Magazin/Kolben_Magazin?Kolben_Ausschub_FWD]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[Kolben_Magazin]]></ComponentName>
+			<DeviceAddress><![CDATA[]]></DeviceAddress>
+			<DeviceName><![CDATA[]]></DeviceName>
+			<DriveType><![CDATA[ValveX2Bistable]]></DriveType>
+			<Function><![CDATA[ControlTag]]></Function>
+			<ItemPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell/Hydraulikzylinder_Magazin/Kolben_Magazin]]></ItemPath>
+			<PLCAddress><![CDATA[]]></PLCAddress>
+			<PLCName><![CDATA[PLC1]]></PLCName>
+			<PLCTagComment><![CDATA[]]></PLCTagComment>
+			<PLCTagName><![CDATA[Kolben_Ausschub_BWD]]></PLCTagName>
+			<PLCTypeOverride><![CDATA[]]></PLCTypeOverride>
+			<SymbolName><![CDATA[Kolben_Ausschub_BWD]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Kolben_Magazin) (ControlTag) - Kolben_Ausschub_BWD]]></VarComment>
+			<VarName><![CDATA[Kolben_Ausschub_BWD]]></VarName>
+			<VarPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell/Hydraulikzylinder_Magazin/Kolben_Magazin?Kolben_Ausschub_BWD]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[Kolben_Magazin]]></ComponentName>
+			<DeviceAddress><![CDATA[]]></DeviceAddress>
+			<DeviceName><![CDATA[]]></DeviceName>
+			<DriveType><![CDATA[ValveX2Bistable]]></DriveType>
+			<Function><![CDATA[ControlTag]]></Function>
+			<ItemPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell/Hydraulikzylinder_Magazin/Kolben_Magazin]]></ItemPath>
+			<PLCAddress><![CDATA[]]></PLCAddress>
+			<PLCName><![CDATA[PLC1]]></PLCName>
+			<PLCTagComment><![CDATA[]]></PLCTagComment>
+			<PLCTagName><![CDATA[Kolben_Hochfahren_FWD]]></PLCTagName>
+			<PLCTypeOverride><![CDATA[]]></PLCTypeOverride>
+			<SymbolName><![CDATA[Kolben_Hochfahren_FWD]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Kolben_Magazin) (ControlTag) - Kolben_Hochfahren_FWD]]></VarComment>
+			<VarName><![CDATA[Kolben_Hochfahren_FWD]]></VarName>
+			<VarPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell/Hydraulikzylinder_Magazin/Kolben_Magazin?Kolben_Hochfahren_FWD]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[Kolben_Magazin]]></ComponentName>
+			<DeviceAddress><![CDATA[]]></DeviceAddress>
+			<DeviceName><![CDATA[]]></DeviceName>
+			<DriveType><![CDATA[ValveX2Bistable]]></DriveType>
+			<Function><![CDATA[ControlTag]]></Function>
+			<ItemPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell/Hydraulikzylinder_Magazin/Kolben_Magazin]]></ItemPath>
+			<PLCAddress><![CDATA[]]></PLCAddress>
+			<PLCName><![CDATA[PLC1]]></PLCName>
+			<PLCTagComment><![CDATA[]]></PLCTagComment>
+			<PLCTagName><![CDATA[Kolben_Hochfahren_BWD]]></PLCTagName>
+			<PLCTypeOverride><![CDATA[]]></PLCTypeOverride>
+			<SymbolName><![CDATA[Kolben_Hochfahren_BWD]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Kolben_Magazin) (ControlTag) - Kolben_Hochfahren_BWD]]></VarComment>
+			<VarName><![CDATA[Kolben_Hochfahren_BWD]]></VarName>
+			<VarPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell/Hydraulikzylinder_Magazin/Kolben_Magazin?Kolben_Hochfahren_BWD]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[Kolben_Magazin]]></ComponentName>
+			<DeviceAddress><![CDATA[]]></DeviceAddress>
+			<DeviceName><![CDATA[]]></DeviceName>
+			<DriveType><![CDATA[ValveX2Bistable]]></DriveType>
+			<Function><![CDATA[ControlTag]]></Function>
+			<ItemPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell/Hydraulikzylinder_Magazin/Kolben_Magazin]]></ItemPath>
+			<PLCAddress><![CDATA[]]></PLCAddress>
+			<PLCName><![CDATA[PLC1]]></PLCName>
+			<PLCTagComment><![CDATA[]]></PLCTagComment>
+			<PLCTagName><![CDATA[Kolben_Presse_FWD]]></PLCTagName>
+			<PLCTypeOverride><![CDATA[]]></PLCTypeOverride>
+			<SymbolName><![CDATA[Kolben_Presse_FWD]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Kolben_Magazin) (ControlTag) - Kolben_Presse_FWD]]></VarComment>
+			<VarName><![CDATA[Kolben_Presse_FWD]]></VarName>
+			<VarPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell/Hydraulikzylinder_Magazin/Kolben_Magazin?Kolben_Presse_FWD]]></VarPath>
+		</Entity>
+		<Entity>
+			<Access><![CDATA[WRITE]]></Access>
+			<ComponentName><![CDATA[Kolben_Magazin]]></ComponentName>
+			<DeviceAddress><![CDATA[]]></DeviceAddress>
+			<DeviceName><![CDATA[]]></DeviceName>
+			<DriveType><![CDATA[ValveX2Bistable]]></DriveType>
+			<Function><![CDATA[ControlTag]]></Function>
+			<ItemPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell/Hydraulikzylinder_Magazin/Kolben_Magazin]]></ItemPath>
+			<PLCAddress><![CDATA[]]></PLCAddress>
+			<PLCName><![CDATA[PLC1]]></PLCName>
+			<PLCTagComment><![CDATA[]]></PLCTagComment>
+			<PLCTagName><![CDATA[Kolben_Presse_BWD]]></PLCTagName>
+			<PLCTypeOverride><![CDATA[]]></PLCTypeOverride>
+			<SymbolName><![CDATA[Kolben_Presse_BWD]]></SymbolName>
+			<Type><![CDATA[BOOL]]></Type>
+			<VarComment><![CDATA[(Kolben_Magazin) (ControlTag) - Kolben_Presse_BWD]]></VarComment>
+			<VarName><![CDATA[Kolben_Presse_BWD]]></VarName>
+			<VarPath><![CDATA[Physics://physics/Gesamtmodell_Hydraulik_Presse/Gesamtmodell/Hydraulikzylinder_Magazin/Kolben_Magazin?Kolben_Presse_BWD]]></VarPath>
+		</Entity>
+	</Mechatronics>
+</CodeGen>
